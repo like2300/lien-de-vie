@@ -1,0 +1,14 @@
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: Urbanist;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf);
+}
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: Urbanist;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf);
+}

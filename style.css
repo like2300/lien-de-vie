@@ -1,0 +1,11 @@
+html {
+  font-family: Urbanist, _font_fallback_1707051189101, sans-serif;
+}
+@font-face {
+  font-family: _font_fallback_1707051189101;
+  size-adjust: 100.98%;
+  src: local("Arial");
+  ascent-override: 94.08%;
+  descent-override: 24.76%;
+  line-gap-override: 0%;
+}
