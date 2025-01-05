@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Classement des donateurs et des causes soutenues sur la plateforme Liens de Vie.">
+    <meta name="keywords" content="classement, donateurs, causes, Liens de Vie, dons, solidarité">
+    <meta name="author" content="Liens de Vie Team">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5C6CF2">
+    <meta property="og:title" content="Classement - Liens de Vie">
+    <meta property="og:description" content="Découvrez le classement des donateurs et des causes soutenues sur Liens de Vie.">
+    <meta property="og:image" content="https://example.com/classement.jpg">
+    <meta property="og:url" content="https://example.com/classement.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Classement - Liens de Vie">
+    <meta name="twitter:description" content="Découvrez le classement des donateurs et des causes soutenues sur Liens de Vie.">
+    <meta name="twitter:image" content="https://example.com/classement.jpg">
+
+    <title>Classement - Liens de Vie</title>
+
+    <link rel="stylesheet" href="principal.css">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf" type="font/ttf">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf" type="font/ttf">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="relative h-full" style="overflow-x: hidden;">
+
+  <!-- Navigation -->
+  <nav class="fixed  z-10 w-full  shadow-white shadow-lg text-wrap bg-white">  
+    <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+      <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
+        <!-- Section Logo -->
+        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+          <a href="./index.html" aria-label="logo" class="flex items-center space-x-2">
+            <div aria-hidden="true" class="flex space-x-1">
+              <div class="h-4 w-4 rounded-full bg-blue-600"></div>
+              <div class="h-6 w-2 bg-blue-400"></div>
+            </div>
+            <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
+          </a>
+
+          <!-- Bouton Menu Mobile -->
+          <div class="relative flex max-h-10 items-center lg:hidden">
+            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
+              <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Fond Mobile -->
+        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        </div>
+
+        <!-- Liens de Navigation -->
+        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
+          <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
+            <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
+              <li>
+                <a href="./index.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="./cause.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Causes
+                </a>
+              </li>
+              <li>
+                <a href="./don.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Soutenir
+                </a>
+              </li>
+              <li>
+                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Classement
+                </a>
+              </li>
+              <li>
+                <a href="/#evenements" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Événements
+                </a>
+              </li>
+              <li>
+                <a href="./contact.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+    <!-- Section Principale -->
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+
+    <script type="module">
+      import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+    
+      const keenSlider = new KeenSlider(
+        '#keen-slider',
+        {
+          loop: true,
+          slides: {
+            origin: 'center',
+            perView: 1.25,
+            spacing: 16,
+          },
+          breakpoints: {
+            '(min-width: 1024px)': {
+              slides: {
+                origin: 'auto',
+                perView: 2.5,
+                spacing: 32,
+              },
+            },
+          },
+        },
+        []
+      )
+    
+      const keenSliderPrevious = document.getElementById('keen-slider-previous')
+      const keenSliderNext = document.getElementById('keen-slider-next')
+    
+      keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+      keenSliderNext.addEventListener('click', () => keenSlider.next())
+    </script>
+    
+    <header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+        <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+          <!-- Titre et Introduction -->
+          <div class="max-w-xl">
+            <h2 class="text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
+              Classement des Donateurs
+            </h2>
+            <p class="mt-4 text-gray-700">
+              Découvrez les donateurs les plus généreux et les causes les plus soutenues.
+            </p>
+          </div>
+    
+          <!-- Boutons de navigation du carrousel -->
+          <div class="mt-8 flex gap-4 lg:mt-0">
+            <button
+              aria-label="Slide précédent"
+              id="keen-slider-previous"
+              class="rounded-full border border-blue-600 p-3 text-blue-600 transition hover:bg-blue-600 hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 rtl:rotate-180"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+    
+            <button
+              aria-label="Slide suivant"
+              id="keen-slider-next"
+              class="rounded-full border border-blue-600 p-3 text-blue-600 transition hover:bg-blue-600 hover:text-white"
+            >
+              <svg
+                class="size-5 rtl:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+        <!-- Carrousel des donateurs -->
+        <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+          <div id="keen-slider" class="keen-slider">
+            <!-- Slide 1 : Top Donateur -->
+            <div class="keen-slider__slide">
+              <div class="flex h-full flex-col justify-between bg-blue-600 rounded-2xl p-6 shadow-sm sm:p-8 lg:p-12">
+                <div>
+                  <h3 class="text-2xl font-bold text-white sm:text-3xl">Entreprise XYZ</h3>
+                  <p class="mt-4 text-gray-100">Montant total des dons : 500 000 CFA</p>
+                  <p class="mt-2 text-gray-100">Type : Entreprise</p>
+                </div>
+                <footer class="mt-4 text-sm font-medium text-gray-100 sm:mt-6">
+                  &mdash; Top Donateur
+                </footer>
+              </div>
+            </div>
+    
+            <!-- Slide 2 : Donateur Actif -->
+            <div class="keen-slider__slide">
+              <div class="flex h-full flex-col justify-between bg-blue-600 rounded-2xl p-6 shadow-sm sm:p-8 lg:p-12">
+                <div>
+                  <h3 class="text-2xl font-bold text-white sm:text-3xl">Jean Dupont</h3>
+                  <p class="mt-4 text-gray-100">Montant total des dons : 300 000 CFA</p>
+                  <p class="mt-2 text-gray-100">Type : Particulier</p>
+                </div>
+                <footer class="mt-4 text-sm font-medium text-gray-100 sm:mt-6">
+                  &mdash; Donateur Actif
+                </footer>
+              </div>
+            </div>
+    
+            <!-- Slide 3 : Donateur Engagé -->
+            <div class="keen-slider__slide">
+              <div class="flex h-full flex-col justify-between bg-blue-600 rounded-2xl p-6 shadow-sm sm:p-8 lg:p-12">
+                <div>
+                  <h3 class="text-2xl font-bold text-white sm:text-3xl">Association ABC</h3>
+                  <p class="mt-4 text-gray-100">Montant total des dons : 200 000 CFA</p>
+                  <p class="mt-2 text-gray-100">Type : ONG</p>
+                </div>
+                <footer class="mt-4 text-sm font-medium text-gray-100 sm:mt-6">
+                  &mdash; Donateur Engagé
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section des Fonds Accumulés -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <!-- Titre et description -->
+      <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+        <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
+          L'Impact de Votre Générosité
+        </h2>
+        <br>
+        <p class="mt-4 text-gray-600 sm:text-xl">
+          Grâce à votre soutien, nous avons accompli de grandes choses ensemble. Voici quelques chiffres qui
+          témoignent de l'impact réel de vos contributions.
+        </p>
+      </div>
+
+      <!-- Statistiques -->
+      <dl
+        class="mt-6 grid grid-cols-1 gap-4 divide-y divide-gray-100 sm:mt-8 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
+        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="100">
+          <dt class="order-last text-lg font-medium text-gray-500">Vies Transformées</dt>
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">500+</dd>
+        </div>
+
+        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="200">
+          <dt class="order-last text-lg font-medium text-gray-500">Fonds Collectés</dt>
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">100K CFA</dd>
+        </div>
+
+        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="300">
+          <dt class="order-last text-lg font-medium text-gray-500">Projets Soutenus</dt>
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">50+</dd>
+        </div>
+
+        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="400">
+          <dt class="order-last text-lg font-medium text-gray-500">Dons Effectués</dt>
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">86k</dd>
+        </div>
+      </dl>
+    </div>
+
+
+    <!-- Section du Tableau des Donateurs -->
+    <div class="relative w-full overflow-auto mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="relative w-full overflow-auto bg-white rounded-lg shadow-sm">
+        <!-- Barre de recherche -->
+        <div class="p-4 border-b border-zinc-200">
+          <div class="flex items-center gap-2">
+            <input
+              type="text"
+              placeholder="Rechercher un donateur..."
+              class="w-full px-4 py-2 text-sm text-zinc-700 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Rechercher
+            </button>
+          </div>
+        </div>
+      
+        <!-- Tableau -->
+        <table class="w-full caption-bottom text-sm">
+          <thead class="bg-zinc-50">
+            <tr class="border-b border-zinc-200">
+              <th class="h-12 px-4 text-left font-medium text-zinc-500">STATUT</th>
+              <th class="h-12 px-4 text-left font-medium text-zinc-500">DONATEUR</th>
+              <th class="h-12 px-4 text-left font-medium text-zinc-500">TYPE</th>
+              <th class="h-12 px-4 text-left font-medium text-zinc-500">MONTANT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Exemple de ligne de donateur -->
+            <tr class="border-b border-zinc-200 hover:bg-zinc-50 transition-colors">
+              <td class="p-4 text-sm font-medium text-zinc-900">#1</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">Entreprise XYZ</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">Entreprise</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">500 000 CFA</td>
+            </tr>
+            <!-- Autres lignes de donateurs -->
+            <tr class="border-b border-zinc-200 hover:bg-zinc-50 transition-colors">
+              <td class="p-4 text-sm font-medium text-zinc-900">#2</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">Jean Dupont</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">Particulier</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">150 000 CFA</td>
+            </tr>
+            <tr class="border-b border-zinc-200 hover:bg-zinc-50 transition-colors">
+              <td class="p-4 text-sm font-medium text-zinc-900">#3</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">Association ABC</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">ONG</td>
+              <td class="p-4 text-sm font-medium text-zinc-900">300 000 CFA</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <!-- Pagination (optionnelle) -->
+        <div class="p-4 border-t border-zinc-200 flex justify-between items-center">
+          <p class="text-sm text-zinc-500">Affichage de 1 à 3 sur 50 donateurs</p>
+          <div class="flex gap-2">
+            <button
+              class="px-4 py-2 text-sm font-medium text-zinc-700 bg-white border border-zinc-300 rounded-lg hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Précédent
+            </button>
+            <button
+              class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Suivant
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div data-aos="zoom-out-left" class="mx-auto flex flex-col justify-center items-center content-center">
+        <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
+          Recevez nos dernières nouvelles et suivez notre impact !
+        </h2>
+    
+        <p class="mt-2 text-center text-gray-600">
+          Inscrivez-vous pour rester informé des projets et initiatives de Lien de Vie.
+        </p>
+    
+        <form class="mt-6">
+          <div class="relative max-w-lg">
+            <label class="sr-only" for="email">Email</label>
+    
+            <input
+              class="w-full rounded-full border-gray-300 bg-gray-100 p-3 pe-32 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600"
+              id="email" type="email" placeholder="votre@email.com" />
+    
+            <button type="submit"
+              class="absolute end-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+              S'inscrire
+            </button>
+          </div>
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
+            <div class="text-center">
+                <h2 data-aos="zoom-in" class="text-3xl font-extrabold sm:text-5xl">Un Impact Durable</h2>
+                <p data-aos="zoom-in" class="mx-auto mt-4 max-w-md text-blue-100">Ensemble, nous construisons un avenir meilleur.</p>
+                <a data-aos="zoom-in" href="#" class="mt-8 inline-block rounded-full border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Participez Maintenant</a>
+            </div>
+            <div class="mt-16 border-t border-blue-300 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
+                <ul class="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
+                    <li><a href="#" class="transition hover:underline">Mentions Légales</a></li>
+                    <li><a href="#" class="transition hover:underline">Politique de Confidentialité</a></li>
+                    <li><a href="#" class="transition hover:underline">Conditions Générales</a></li>
+                </ul>
+                <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-facebook-circle text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-instagram text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-twitter text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-github text-2xl"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script type="module" src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Initialisation du Carrousel
+        const carousel = new KeenSlider("#carousel", {
+            loop: true,
+            slides: {
+                perView: 1,
+                spacing: 16,
+            },
+            breakpoints: {
+                "(min-width: 768px)": {
+                    slides: {
+                        perView: 2,
+                    },
+                },
+                "(min-width: 1024px)": {
+                    slides: {
+                        perView: 3,
+                    },
+                },
+            },
+        });
+
+        // Fonction de Recherche
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#donateursTable tr');
+            rows.forEach(row => {
+                const name = row.cells[0].textContent.toLowerCase();
+                if (name.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

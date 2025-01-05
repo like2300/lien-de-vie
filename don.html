@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Liens de Vie est une plateforme solidaire qui facilite les dons pour soutenir des structures vulnérables et organiser des événements caritatifs.">
+    <meta name="description" content="Faites un don pour soutenir des causes humanitaires via la plateforme Liens de Vie.">
     <meta name="keywords" content="donation, solidarité, humanitaire, caritatif, Liens de Vie, dons en ligne">
     <meta name="author" content="Liens de Vie Team">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#5C6CF2">
-    <meta property="og:title" content="Liens de Vie">
-    <meta property="og:description" content="Liens de Vie est une plateforme solidaire qui facilite les dons pour soutenir des structures vulnérables et organiser des événements caritatifs.">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:url" content="https://example.com">
+    <meta property="og:title" content="Faites un Don - Liens de Vie">
+    <meta property="og:description" content="Faites un don pour soutenir des causes humanitaires via la plateforme Liens de Vie.">
+    <meta property="og:image" content="https://example.com/don.jpg">
+    <meta property="og:url" content="https://example.com/don.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Liens de Vie">
-    <meta name="twitter:description" content="Liens de Vie est une plateforme solidaire qui facilite les dons pour soutenir des structures vulnérables et organiser des événements caritatifs.">
-    <meta name="twitter:image" content="https://example.com/image.jpg">
-  
-    <title>Liens de vie</title>
-  
-    <link rel="stylesheet" href="principal.css">
+    <meta name="twitter:title" content="Faites un Don - Liens de Vie">
+    <meta name="twitter:description" content="Faites un don pour soutenir des causes humanitaires via la plateforme Liens de Vie.">
+    <meta name="twitter:image" content="https://example.com/don.jpg">
+
+    <title>Faites un Don - Liens de Vie</title>
+
+    <link rel="stylesheet" href="./principal.css">
     <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
     <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf">
     <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf" type="font/ttf">
     <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf" type="font/ttf">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style4.css">
-    <link rel="stylesheet" href="style3.css">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  </head>
-  
-<body class="relative h-full " style="overflow-x: hidden;">
-  
+    <link rel="stylesheet" href="./contact.html">
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
 
-  <nav class="fixed backdrop-blur-2xl bg-white bg-opacity-50 z-10 w-full border-b border-blue-400 dark:border-gray-800"  data-aos="fade-down">
+        /* CSS Code */
+.swiper-wrapper {
+width: 100%;
+height: max-content !important;
+padding-bottom: 64px !important;
+-webkit-transition-timing-function: linear !important;
+transition-timing-function: linear !important;
+position: relative;
+}
+.swiper-pagination-bullet {
+background: #4582f5;
+}
+.swiper-pagination-bullet-active {
+background:#4582f5 !important;
+}
+
+    </style>
+</head>
+<body class="relative h-full" style="overflow-x: hidden;">
+
+  
+  <!-- Navigation -->
+  <nav class="fixed  z-50 w-full  shadow-white shadow-lg text-wrap bg-white">  
     <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
       <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
         <!-- Section Logo -->
@@ -49,31 +67,21 @@
             </div>
             <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
           </a>
-  
+
           <!-- Bouton Menu Mobile -->
           <div class="relative flex max-h-10 items-center lg:hidden">
-            <button
-              aria-label="hamburger"
-              id="hamburger"
-              class="relative z-30 -mr-6 p-6 focus:outline-none"
-            >
+            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
               <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
             </button>
           </div>
         </div>
-  
+
         <!-- Fond Mobile -->
-        <div
-          id="navLayer"
-          aria-hidden="true"
-          class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden"
-        ></div>
-  
+        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        </div>
+
         <!-- Liens de Navigation -->
-        <div
-          id="navlinks"
-          class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
-        >
+        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
           <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
             <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
               <li>
@@ -92,7 +100,7 @@
                 </a>
               </li>
               <li>
-                <a href="/#classement" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
                   Classement
                 </a>
               </li>
@@ -112,243 +120,453 @@
       </div>
     </div>
   </nav>
-   
 
-
-
-
-<header style="background-image: url(https://img.freepik.com/free-vector/flat-geometric-background_23-2149343174.jpg?t=st=1735313834~exp=1735317434~hmac=f90e4435255040b70bcaac9d672695ca361a4f57d6b0221522f12b3f249df305&amp;w=826);background-position: center; background-size: cover;" class="bg-no-repeat bg-fixed">
- 
-
-<br><br><br><br><br>
-
-<script>
-  function stepper() {
-    return {
-      steps: ['Vos informations', 'Sélectionnez une cause', 'Montant du don'],
-      currentStep: 0,
-      form: {
-        name: '',
-        email: '',
-        cause: '',
-        amount: '',
-      },
-      nextStep() {
-        if (this.currentStep < this.steps.length - 1) {
-          this.currentStep++;
-        }
-      },
-      prevStep() {
-        if (this.currentStep > 0) {
-          this.currentStep--;
-        }
-      },
-      submitForm() {
-        if (this.form.name && this.form.email && this.form.cause && this.form.amount) {
-          alert(`Merci ${this.form.name} pour votre don de ${this.form.amount} CFA pour la cause "${this.form.cause}".`);
-        } else {
-          alert('Veuillez remplir tous les champs.');
-        }
-      },
-    };
-  }
-</script>
-
-
-<div class="flex justify-center items-center min-h-screen">
   
-  <div x-data="stepper()" class="bg-white rounded-2xl shadow-lg p-8 max-w-3xl w-full flex flex-col items-center ">
-    <!-- Progress Bar -->
-    <ol class="flex items-center w-full mb-6">
-      <template x-for="(step, index) in steps" :key="index">
-        <li class="flex w-full items-center" :class="{ 'text-blue-600': currentStep >= index }">
-          <div class="flex items-center justify-center w-10 h-10 rounded-full lg:w-12 lg:h-12" 
-               :class="currentStep >= index ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-400'">
-            <span x-text="index + 1"></span>
+
+   <!-- Section Principale -->
+   <header class="overflow-x-hidden lg:overflow-x-none">
+    <section class="overflow-hidden bg-[url(https://i.pinimg.com/736x/1d/d8/a5/1dd8a54bd73fecbb34a2436ed02a3570.jpg)] bg-cover bg-top bg-no-repeat h-screen bg-fixed">
+        <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24 w-screen flex h-full justify-center content-center items-center">
+            <div class="text-center ltr:sm:text-left rtl:sm:text-right">
+                <h2 class="text-4xl font-bold text-white sm:text-3xl md:text-5xl">
+                    Faites un don <br> et changez des vies
+                </h2>
+                <p class="text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
+                    Votre générosité peut faire la différence. <br> 
+                    Que ce soit pour soutenir l'éducation, la santé, ou l'aide alimentaire, <br>
+                    chaque don, même modeste, contribue à un avenir meilleur.
+                </p>
+                <div class="mt-4 sm:mt-8">
+                    <a
+                        href="#formulaire-de-don"   
+                        class="inline-block rounded-full bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-400"
+                    >
+                        Faire un don maintenant
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+
+    <!-- Section des Causes -->
+    <section class="p-5 md:p-12 lg:px-16 lg:py-24"  >
+        <div class="mx-auto px-4 grid justify-items-center">
+            <h2 class="text-3xl text-center md:text-5xl font-bold text-blue-600 mb-4">Causes à Soutenir</h2>
+            <p class="text-gray-600 mb-8 text-center md:w-1/2">Découvrez les causes qui ont besoin de votre soutien. Chaque don compte.</p>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Carte 1 -->
+                <article data-aos="zoom-in" data-aos-delay="100" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+                    <img alt="Orphelinat Saint-Joseph" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Orphelinat Saint-Joseph</h3>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.</p>
+                        <button onclick="openDonationPopup('Orphelinat Saint-Joseph')" class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700">
+                            Faire un Don
+                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Carte 2 -->
+                <article data-aos="zoom-in" data-aos-delay="200" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+                    <img alt="Éducation pour Tous" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Éducation pour Tous</h3>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">Soutenez l'éducation des enfants défavorisés dans les zones rurales.</p>
+                        <button onclick="openDonationPopup('Éducation pour Tous')" class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700">
+                            Faire un Don
+                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Carte 3 -->
+                <article data-aos="zoom-in" data-aos-delay="300" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+                    <img alt="Soutien Médical" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Soutien Médical</h3>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">Aidez à fournir des soins médicaux aux personnes dans le besoin.</p>
+                        <button onclick="openDonationPopup('Soutien Médical')" class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700">
+                            Faire un Don
+                            <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 md:p-12 lg:px-16 lg:py-24">
+        <h2 class="text-3xl text-center md:text-5xl font-bold text-blue-600 mb-4">
+            Faites un Don, Changez des Vies
+          </h2>
+          <p class="text-gray-600 mb-8 text-center">
+            Votre générosité peut faire la différence. Soutenez des causes <br> qui ont un impact réel sur la vie des personnes dans le besoin. Chaque don, même modeste, <br> contribue à construire un avenir meilleur.
+          </p>
+
+
+        <div class="w-full relative">
+          <!-- Effet de brume floue à gauche
+          <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent   z-10"></div>
+      
+           Effet de brume floue à droite  
+          <div class="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent   z-10"></div>
+       -->
+          <!-- Swiper Container -->
+          <div class="swiper centered-slide-carousel swiper-container relative">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+                  <img
+                    src="https://i.pinimg.com/236x/4d/b7/17/4db7174d1eb31c90e15ea34a9e32e7aa.jpg"
+                    alt="Image 1"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+      
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+                  <img
+                    src="https://i.pinimg.com/236x/27/c1/fd/27c1fd098a5893c6591ad9e202dfc4c7.jpg"
+                    alt="Image 2"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+      
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+                  <img
+                    src="https://i.pinimg.com/236x/97/db/63/97db63ab5abf2f60e78cb4824fee043d.jpg"
+                    alt="Image 3"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+      
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+                  <img
+                    src="https://i.pinimg.com/236x/ac/eb/0d/aceb0d0eb3ddbc6cc522d2e4f7237189.jpg"
+                    alt="Image 4"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+      
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+                  <img
+                    src="https://i.pinimg.com/236x/9d/ca/6c/9dca6c839cac6b1567b3a08c57a6d315.jpg"
+                    alt="Image 5"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+      
+              <!-- Slide 6 -->
+              <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+                  <img
+                    src="https://i.pinimg.com/236x/ab/62/de/ab62ded6fb63594397bf43cf4186795a.jpg"
+                    alt="Image 6"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="w-full h-1" 
-               :class="currentStep > index ? 'bg-blue-100' : 'bg-gray-100'" 
-               x-show="index < steps.length - 1">
-          </div>
-        </li>
-      </template>
-    </ol>
-  
-    <!-- Form Steps -->
-    <form @submit.prevent="submitForm">
-      <!-- Étape 1 -->
-      <div x-show="currentStep === 0" class="space-y-4">
-        <h3 class="text-xl font-bold text-gray-900">Étape 1 : Vos informations</h3>
-        <div>
-          <label for="name" class="block mb-1 text-sm font-medium text-gray-700">Nom complet</label>
-          <input id="name" type="text" x-model="form.name" placeholder="Votre nom complet" required 
-                 class="w-full rounded-lg border-gray-300 focus:ring-blue-600 focus:border-blue-600">
         </div>
-        <div>
-          <label for="email" class="block mb-1 text-sm font-medium text-gray-700">Email</label>
-          <input id="email" type="email" x-model="form.email" placeholder="Votre email" required 
-                 class="w-full rounded-lg border-gray-300 focus:ring-blue-600 focus:border-blue-600">
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <div data-aos="zoom-out-left" class="mx-auto flex flex-col justify-center items-center content-center">
+          <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
+            Recevez nos dernières nouvelles et suivez notre impact !
+          </h2>
+      
+          <p class="mt-2 text-center text-gray-600">
+            Inscrivez-vous pour rester informé des projets et initiatives de Lien de Vie.
+          </p>
+      
+          <form class="mt-6">
+            <div class="relative max-w-lg">
+              <label class="sr-only" for="email">Email</label>
+      
+              <input
+                class="w-full rounded-full border-gray-300 bg-gray-100 p-3 pe-32 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600"
+                id="email" type="email" placeholder="votre@email.com" />
+      
+              <button type="submit"
+                class="absolute end-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                S'inscrire
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="flex justify-end">
-          <button type="button" @click="nextStep" class="bg-blue-600 text-white rounded-lg px-4 py-2">
-            Suivant
-          </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+
+
+    <!-- Pop-up de Don -->
+    <div id="donationPopup" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+                <h3 id="popupTitle" class="text-2xl font-bold text-blue-600 mb-4">Faire un Don</h3>
+                <form id="donationForm">
+                    <div class="mb-4">
+                        <label for="firstName" class="block text-sm font-medium text-gray-700">Prénom</label>
+                        <input type="text" id="firstName" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="Entrez votre prénom" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="lastName" class="block text-sm font-medium text-gray-700">Nom</label>
+                        <input type="text" id="lastName" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Numéro de Téléphone</label>
+                        <input type="tel" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="Entrez votre numéro" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="amount" class="block text-sm font-medium text-gray-700">Montant du Don (CFA)</label>
+                        <input type="number" id="amount" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="Entrez le montant" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">Choisir le Mode de Paiement</button>
+                </form>
+                <button onclick="closeDonationPopup()" class="mt-4 w-full bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400">Annuler</button>
+            </div>
         </div>
-      </div>
-  
-      <!-- Étape 2 -->
-      <div x-show="currentStep === 1" class="space-y-4">
-        <h3 class="text-xl font-bold text-gray-900">Étape 2 : Sélectionnez une cause</h3>
-        <div>
-          <label for="cause" class="block mb-1 text-sm font-medium text-gray-700">Cause</label>
-          <select id="cause" x-model="form.cause" required 
-                  class="w-full rounded-lg border-gray-300 focus:ring-blue-600 focus:border-blue-600">
-            <option value="" disabled selected>Choisissez une cause</option>
-            <option value="education">Éducation</option>
-            <option value="sante">Santé</option>
-            <option value="eau">Eau potable</option>
-            <option value="alimentaire">Aide alimentaire</option>
-          </select>
-        </div>
-        <div class="flex justify-between">
-          <button type="button" @click="prevStep" class="bg-gray-300 text-gray-700 rounded-lg px-4 py-2">
-            Retour
-          </button>
-          <button type="button" @click="nextStep" class="bg-blue-600 text-white rounded-lg px-4 py-2">
-            Suivant
-          </button>
-        </div>
-      </div>
-  
-      <!-- Étape 3 -->
-      <div x-show="currentStep === 2" class="space-y-4">
-        <h3 class="text-xl font-bold text-gray-900">Étape 3 : Montant du Don</h3>
-        <div>
-          <label for="amount" class="block mb-1 text-sm font-medium text-gray-700">Montant (CFA)</label>
-          <input id="amount" type="number" x-model="form.amount" placeholder="Ex : 5000" required 
-                 class="w-full rounded-lg border-gray-300 focus:ring-blue-600 focus:border-blue-600">
-        </div>
-        <div class="flex justify-between">
-          <button type="button" @click="prevStep" class="bg-gray-300 text-gray-700 rounded-lg px-4 py-2">
-            Retour
-          </button>
-          <button type="submit" class="bg-blue-600 text-white rounded-lg px-4 py-2">
-            Valider le Don
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-
-</div>
-
-
-
-
-
-</header>
-
-
-  <footer  
-  
-  
-  class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-    <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
-      <div class="text-center">
-        <h2 data-aos="zoom-in" data-aos-easing="ease-in-back" class="text-3xl font-extrabold sm:text-5xl">Un Impact Durable</h2>
-  
-        <p data-aos="zoom-in" data-aos-easing="ease-in-back" class="mx-auto mt-4 max-w-md text-blue-100">
-          Ensemble, nous construisons un avenir meilleur. Découvrez comment votre soutien change des vies.
-        </p>
-  
-        <a data-aos="zoom-in" data-aos-easing="ease-in-back"
-          href="#"
-          class="mt-8 inline-block rounded-full border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
-        >
-          Participez Maintenant
-        </a>
-      </div>
-  
-      <div class="mt-16 border-t border-blue-300 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
-        <ul class="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
-          <li>
-            <a href="#" class="transition hover:underline">Mentions Légales</a>
-          </li>
-          <li>
-            <a href="#" class="transition hover:underline">Politique de Confidentialité</a>
-          </li>
-          <li>
-            <a href="#" class="transition hover:underline">Conditions Générales</a>
-          </li>
-        </ul>
-  
-        <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">Facebook</span>
-              <i class="bx bxl-facebook-circle text-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">Instagram</span>
-              <i class="bx bxl-instagram text-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">Twitter</span>
-              <i class="bx bxl-twitter text-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">GitHub</span>
-              <i class="bx bxl-github text-2xl"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </footer>
+
+    <!-- Pop-up de Choix de Paiement -->
+    <div id="paymentPopup" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4">Choisissez le Mode de Paiement</h3>
+                <div class="mb-4">
+                    <button onclick="openCardPayment()" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 mb-2">Payer par Carte Bancaire</button>
+                    <button onclick="openMobilePayment()" class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700">Payer par Mobile Money</button>
+                </div>
+                <button onclick="closePaymentPopup()" class="mt-4 w-full bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400">Retour</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up de Paiement par Carte -->
+    <div id="cardPaymentPopup" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4">Paiement par Carte Bancaire</h3>
+                <form id="cardPaymentForm">
+                    <div class="mb-4">
+                        <label for="cardNumber" class="block text-sm font-medium text-gray-700">Numéro de Carte</label>
+                        <input type="text" id="cardNumber" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="expiryDate" class="block text-sm font-medium text-gray-700">Date d'Expiration</label>
+                        <input type="text" id="expiryDate" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="MM/AA" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="cvv" class="block text-sm font-medium text-gray-700">CVV</label>
+                        <input type="text" id="cvv" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="123" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">Payer</button>
+                </form>
+                <button onclick="closeCardPaymentPopup()" class="mt-4 w-full bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400">Retour</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up de Paiement par Mobile Money -->
+    <div id="mobilePaymentPopup" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4">Paiement par Mobile Money</h3>
+                <form id="mobilePaymentForm">
+                    <div class="mb-4">
+                        <label for="operator" class="block text-sm font-medium text-gray-700">Opérateur</label>
+                        <select id="operator" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" required>
+                            <option value="mtn">MTN</option>
+                            <option value="airtel">Airtel</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="mobileNumber" class="block text-sm font-medium text-gray-700">Numéro de Téléphone</label>
+                        <input type="tel" id="mobileNumber" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" placeholder="Entrez votre numéro" required>
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700">Payer</button>
+                </form>
+                <button onclick="closeMobilePaymentPopup()" class="mt-4 w-full bg-gray-300 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-400">Retour</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up de Confirmation -->
+    <div id="confirmationPopup" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4">Confirmation de Paiement</h3>
+                <p class="text-gray-700 mb-4">Vous allez recevoir un message de validation du don par votre opérateur.</p>
+                <button onclick="closeConfirmationPopup()" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
+            <div class="text-center">
+                <h2 data-aos="zoom-in" class="text-3xl font-extrabold sm:text-5xl">Un Impact Durable</h2>
+                <p data-aos="zoom-in" class="mx-auto mt-4 max-w-md text-blue-100">Ensemble, nous construisons un avenir meilleur.</p>
+                <a data-aos="zoom-in" href="#" class="mt-8 inline-block rounded-full border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Participez Maintenant</a>
+            </div>
+            <div class="mt-16 border-t border-blue-300 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
+                <ul class="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
+                    <li><a href="#" class="transition hover:underline">Mentions Légales</a></li>
+                    <li><a href="#" class="transition hover:underline">Politique de Confidentialité</a></li>
+                    <li><a href="#" class="transition hover:underline">Conditions Générales</a></li>
+                </ul>
+                <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-facebook-circle text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-instagram text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-twitter text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-github text-2xl"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script type="module" src="./navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // AOS.init({
+        //     duration: 1000,
+        //     once: true,
+        // });
+
+        // Gestion des Pop-ups
+        function openDonationPopup(cause) {
+            document.getElementById('popupTitle').textContent = `Faire un Don - ${cause}`;
+            document.getElementById('donationPopup').classList.remove('hidden');
+        }
+
+        function closeDonationPopup() {
+            document.getElementById('donationPopup').classList.add('hidden');
+        }
+
+        function openPaymentPopup() {
+            document.getElementById('paymentPopup').classList.remove('hidden');
+            closeDonationPopup();
+        }
+
+        function closePaymentPopup() {
+            document.getElementById('paymentPopup').classList.add('hidden');
+            openDonationPopup(document.getElementById('popupTitle').textContent.replace('Faire un Don - ', ''));
+        }
+
+        function openCardPayment() {
+            document.getElementById('cardPaymentPopup').classList.remove('hidden');
+            closePaymentPopup();
+        }
+
+        function closeCardPaymentPopup() {
+            document.getElementById('cardPaymentPopup').classList.add('hidden');
+            openPaymentPopup();
+        }
+
+        function openMobilePayment() {
+            document.getElementById('mobilePaymentPopup').classList.remove('hidden');
+            closePaymentPopup();
+        }
+
+        function closeMobilePaymentPopup() {
+            document.getElementById('mobilePaymentPopup').classList.add('hidden');
+            openPaymentPopup();
+        }
+
+        function openConfirmationPopup() {
+            document.getElementById('confirmationPopup').classList.remove('hidden');
+            closeCardPaymentPopup();
+            closeMobilePaymentPopup();
+        }
+
+        function closeConfirmationPopup() {
+            document.getElementById('confirmationPopup').classList.add('hidden');
+        }
+
+        // Gestion des Formulaires
+        document.getElementById('donationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            openPaymentPopup();
+        });
+
+        document.getElementById('cardPaymentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            openConfirmationPopup();
+        });
+
+        document.getElementById('mobilePaymentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            openConfirmationPopup();
+        });
   
-
-
-
-
-  
-  
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script type="module" src="navbar.js"></script>
-  <script type="module" src="slider.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
- 
-  <script>
-    AOS.init({
-      duration: 1000, // Durée de l'animation (en ms)
-      once: true, // Animation uniquement au premier scroll
+        var swiper = new Swiper(".centered-slide-carousel", {
+        centeredSlides: true, // Centre le slide actif
+        paginationClickable: true, // Permet de cliquer sur la pagination
+        loop: true, // Active la boucle infinie
+        spaceBetween: 30, // Espace entre les slides
+        slideToClickedSlide: true, // Permet de cliquer sur un slide pour le sélectionner
+        autoplay: {
+            delay: 3000, // Délai entre les slides (3 secondes)
+            disableOnInteraction: false, // Continue le défilement même après interaction utilisateur
+        },
+        pagination: {
+            el: ".centered-slide-carousel .swiper-pagination", // Sélecteur de la pagination
+            clickable: true, // Permet de cliquer sur les points de pagination
+        },
+        breakpoints: {
+            1920: {
+            slidesPerView: 4, // Nombre de slides visibles pour les écrans larges
+            spaceBetween: 30, // Espace entre les slides
+            },
+            1028: {
+            slidesPerView: 2, // Nombre de slides visibles pour les écrans moyens
+            spaceBetween: 10, // Espace entre les slides
+            },
+            990: {
+            slidesPerView: 1, // Nombre de slides visibles pour les petits écrans
+            spaceBetween: 0, // Espace entre les slides
+            },
+        },
     });
-  </script>
-
+    </script>
 </body>
 </html>

@@ -39,13 +39,14 @@
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
 </head>
 
-<body class="relative h-full " style="overflow-x: hidden;">
+<body 
+class="h-full tracking-wider   leading-normal   scroll-smooth overflow-x-hidden lg:overflow-x-none">
 
-
-  <nav class="fixed backdrop-blur-2xl bg-white bg-opacity-50 z-10 w-full border-b border-blue-400 dark:border-gray-800"  data-aos="fade-down">
+  <!-- Navigation -->
+  <nav class="fixed  z-10 w-full  shadow-white shadow-lg text-wrap bg-white">  
     <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
       <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
         <!-- Section Logo -->
@@ -57,31 +58,21 @@
             </div>
             <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
           </a>
-  
+
           <!-- Bouton Menu Mobile -->
           <div class="relative flex max-h-10 items-center lg:hidden">
-            <button
-              aria-label="hamburger"
-              id="hamburger"
-              class="relative z-30 -mr-6 p-6 focus:outline-none"
-            >
+            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
               <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
             </button>
           </div>
         </div>
-  
+
         <!-- Fond Mobile -->
-        <div
-          id="navLayer"
-          aria-hidden="true"
-          class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden"
-        ></div>
-  
+        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        </div>
+
         <!-- Liens de Navigation -->
-        <div
-          id="navlinks"
-          class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
-        >
+        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
           <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
             <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
               <li>
@@ -100,7 +91,7 @@
                 </a>
               </li>
               <li>
-                <a href="/#classement" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
                   Classement
                 </a>
               </li>
@@ -120,34 +111,33 @@
       </div>
     </div>
   </nav>
-   
 
-
-  <header style="background-image: url(https://img.freepik.com/free-vector/flat-geometric-background_23-2149343174.jpg?t=st=1735313834~exp=1735317434~hmac=f90e4435255040b70bcaac9d672695ca361a4f57d6b0221522f12b3f249df305&amp;w=826);background-position: center; background-size: cover;" class="bg-no-repeat bg-fixed">
- 
-
+  <!-- Section Principale -->
+  <header class="overflow-x-hidden lg:overflow-x-none">
     <section>
       <br>
       <br>
-      <section class="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center">
+      <section class="overflow-x-hidden lg:overflow-x-none sm:grid sm:grid-cols-2 sm:items-center">
         <div class="p-5 md:p-12 lg:px-16 lg:py-24 aos-init aos-animate" data-aos="fade-right">
           <div class="mx-auto max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
             <br class="lg:hidden"> <br class="lg:hidden">
-            <h2 class="text-2xl xl:text-6xl font-bold text-blue-600 md:text-3xl  md:mb-4 ">
+            <h1 class="text-2xl xl:text-6xl font-bold text-blue-600 md:text-3xl  md:mb-4">
               Découvrez notre <br> plateforme solidaire
-            </h2> <br class="lg:hidden">
-            <p class="mt-4 text-gray-700 w-">
+            </h1> <br class="lg:hidden">
+            <p class="mt-4 text-gray-700">
               Soutenez des causes importantes avec facilité. Notre plateforme connecte les donateurs aux bénéficiaires,
               tout en assurant une transparence totale. Contribuez dès maintenant pour faire une différence.
             </p>
             <div class="mt-4 md:mt-8">
-              <a href="#" class="inline-block rounded-full bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700focus:outline-none focus:ring focus:ring-yellow-400">
+              <a href="#"
+                class="inline-block rounded-full bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring focus:ring-yellow-400">
                 Commencer aujourd'hui
               </a>
             </div>
           </div>
         </div>
-        <img data-aos="fade-left" alt="Illustration solidaire" src="./Nouveau projet.png" class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] sm:rounded-bl-[30px] md:h-[calc(100%_-_4rem)] rounded-ss-[60px] rounded-bl-[60px] ml-5 aos-init aos-animate">
+        <img data-aos="fade-left" alt="Illustration solidaire" src="./Nouveau projet.png"
+          class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] sm:rounded-bl-[30px] md:h-[calc(100%_-_4rem)] rounded-ss-[60px] rounded-bl-[60px] ml-5 aos-init aos-animate">
         <br>
         <br>
       </section>
@@ -165,9 +155,9 @@
     <section class="p-5 md:p-12 lg:px-16 lg:py-24" data-aos="fade-down">
       <div class="mx-auto px-4 grid justify-items-center">
         <!-- Titre et Paragraphe d'Introduction -->
-        <h2 class="text-3xl text-center  md:text-5xl font-bold text-blue-600 mb-4">Découvrez Nos Causes en Cours</h2>
+        <h2 class="text-3xl text-center md:text-5xl font-bold text-blue-600 mb-4">Découvrez Nos Causes en Cours</h2>
         <br>
-        <p class="text-gray-600 mb-8 text-center md:w-1/2 ">
+        <p class="text-gray-600 mb-8 text-center md:w-1/2">
           Nous vous invitons à explorer les initiatives solidaires qui ont besoin de votre soutien.
           Chaque don compte et contribue à transformer des vies. Ensemble, faisons une différence !
         </p>
@@ -180,130 +170,13 @@
           <!-- Carte 1 -->
           <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
             class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img alt="Exemple de cause"
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
               class="h-56 w-full object-cover">
             <div class="p-4 sm:p-6">
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">
-                  Orphelinat Saint-Joseph
-                </h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-              </p>
-              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                Découvrir
-                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                  →
-                </span>
-              </a>
-            </div>
-          </article>
-          <!-- Carte 1 -->
-          <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
-            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img alt="Exemple de cause"
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
-              class="h-56 w-full object-cover">
-            <div class="p-4 sm:p-6">
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">
-                  Orphelinat Saint-Joseph
-                </h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-              </p>
-              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                Découvrir
-                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                  →
-                </span>
-              </a>
-            </div>
-          </article>
-          <!-- Carte 1 -->
-          <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img alt="Exemple de cause"
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
-              class="h-56 w-full object-cover">
-            <div class="p-4 sm:p-6">
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">
-                  Orphelinat Saint-Joseph
-                </h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-              </p>
-              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                Découvrir
-                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                  →
-                </span>
-              </a>
-            </div>
-          </article>
-          <!-- Carte 1 -->
-          <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400"
-            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img alt="Exemple de cause"
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
-              class="h-56 w-full object-cover">
-            <div class="p-4 sm:p-6">
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">
-                  Orphelinat Saint-Joseph
-                </h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-              </p>
-              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                Découvrir
-                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                  →
-                </span>
-              </a>
-            </div>
-          </article>
-          <!-- Carte 1 -->
-          <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500"
-            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img alt="Exemple de cause"
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
-              class="h-56 w-full object-cover">
-            <div class="p-4 sm:p-6">
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">
-                  Orphelinat Saint-Joseph
-                </h3>
-              </a>
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-              </p>
-              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                Découvrir
-                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                  →
-                </span>
-              </a>
-            </div>
-          </article>
-          <!-- Carte 1 -->
-          <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600"
-            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img alt="Exemple de cause"
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
-              class="h-56 w-full object-cover">
-            <div class="p-4 sm:p-6">
-              <a href="#">
-                <h3 class="text-lg font-medium text-gray-900">
-                  Orphelinat Saint-Joseph
-                </h3>
-              </a>
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                 Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
               </p>
@@ -316,7 +189,198 @@
             </div>
           </article>
 
-          <!-- (Ajoutez d'autres cartes ici) -->
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+ <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+            class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+            <img alt="Enfants de l'orphelinat Saint-Joseph"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80"
+              class="h-56 w-full object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg font-medium text-gray-900">
+                Orphelinat Saint-Joseph
+              </h3>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
+              </p>
+              <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                Découvrir
+                <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                  →
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Répétez les autres cartes avec des descriptions uniques -->
         </div>
       </div>
 
@@ -366,10 +430,7 @@
         class="bg-blue-400 md:h-[500px] h-[400px] shadow-2xl shadow rounded-[30px] lg:rounded-[60px] w-full p-12"
         style="background-image: url('https://i.pinimg.com/736x/15/e8/7a/15e87a466f6ee48e1995fff2d416cd3e.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
       </div>
-
-
     </section>
-
   </article>
 
   <br>
@@ -381,141 +442,153 @@
       <h2 data-aos="zoom-out" class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
         Les orphelins qui doivent leur sourire à votre générosité
       </h2>
-
       <div class="mt-8">
         <div id="keen-slider" class="keen-slider">
-
-          <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+          <!-- Témoignage 1 -->
+          <div class="keen-slider__slide">
+            <blockquote class="h-full rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
               <div class="flex items-center gap-4">
-                <img alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                <img alt="Photo de Marie Dupont"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   class="size-14 rounded-full object-cover" />
-
                 <div>
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+                  <p class="mt-0.5 text-lg font-medium text-gray-900">Marie Dupont</p>
+                  <p class="text-sm text-gray-500">Donatrice régulière</p>
                 </div>
               </div>
-
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                "Grâce à Liens de Vie, j'ai pu soutenir des causes qui me tiennent à cœur. La transparence de la plateforme est
+                incroyable, et je vois directement l'impact de mes dons."
               </p>
             </blockquote>
           </div>
-
-          <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+      
+          <!-- Témoignage 2 -->
+          <div class="keen-slider__slide">
+            <blockquote class="h-full rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
               <div class="flex items-center gap-4">
-                <img alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                <img alt="Photo de Jean Martin"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   class="size-14 rounded-full object-cover" />
-
                 <div>
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+                  <p class="mt-0.5 text-lg font-medium text-gray-900">Jean Martin</p>
+                  <p class="text-sm text-gray-500">Entrepreneur</p>
                 </div>
               </div>
-
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                "En tant qu'entreprise, nous cherchions une plateforme fiable pour nos actions RSE. Liens de Vie a été une
+                excellente découverte. Les enfants de l'orphelinat Saint-Joseph nous remercient !"
               </p>
             </blockquote>
           </div>
-
-          <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+      
+          <!-- Témoignage 3 -->
+          <div class="keen-slider__slide">
+            <blockquote class="h-full rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
               <div class="flex items-center gap-4">
-                <img alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                <img alt="Photo de Sophie Leroy"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   class="size-14 rounded-full object-cover" />
-
                 <div>
-
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
+                  <p class="mt-0.5 text-lg font-medium text-gray-900">Sophie Leroy</p>
+                  <p class="text-sm text-gray-500">Bénévole</p>
                 </div>
               </div>
-
-              <p class="mt-4 text-gray-700 ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
-              </p>
-            </blockquote>
-          </div>
-
-          <div class="keen-slider__slide opacity-40 transition-opacity duration-500">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
-                <img alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover" />
-
-                <div>
-
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Starr</p>
-                </div>
-              </div>
-
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                "Je suis bénévole pour Liens de Vie depuis un an, et je suis impressionnée par leur engagement. Chaque don
+                fait une réelle différence sur le terrain."
+              </p>
+            </blockquote>
+          </div>
+      
+          <!-- Témoignage 4 -->
+          <div class="keen-slider__slide">
+            <blockquote class="h-full rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div class="flex items-center gap-4">
+                <img alt="Photo de Paul Dubois"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  class="size-14 rounded-full object-cover" />
+                <div>
+                  <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Dubois</p>
+                  <p class="text-sm text-gray-500">Donateur occasionnel</p>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-700">
+                "J'ai fait un don pour la première fois via Liens de Vie, et l'expérience a été très simple. Je recommande
+                cette plateforme à tous ceux qui veulent aider."
               </p>
             </blockquote>
           </div>
 
-
+           <!-- Témoignage 5 -->
+           <div class="keen-slider__slide">
+            <blockquote class="h-full rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div class="flex items-center gap-4">
+                <img alt="Photo de Paul Dubois"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  class="size-14 rounded-full object-cover" />
+                <div>
+                  <p class="mt-0.5 text-lg font-medium text-gray-900">Paul Dubois</p>
+                  <p class="text-sm text-gray-500">Donateur occasionnel</p>
+                </div>
+              </div>
+              <p class="mt-4 text-gray-700">
+                "J'ai fait un don pour la première fois via Liens de Vie, et l'expérience a été très simple. Je recommande
+                cette plateforme à tous ceux qui veulent aider."
+              </p>
+            </blockquote>
+          </div>
         </div>
-
+      
         <div class="mt-6 flex items-center justify-center gap-4">
           <button aria-label="Previous slide" id="keen-slider-previous"
             class="text-gray-600 transition-colors hover:text-gray-900">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="size-5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </button>
-
+      
           <p class="w-16 text-center text-sm text-gray-700">
             <span id="keen-slider-active"></span>
             /
             <span id="keen-slider-count"></span>
           </p>
-
-          <button aria-label="Next slide" id="keen-slider-next"
-            class="text-gray-600 transition-colors hover:text-gray-900">
-            <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+      
+          <button aria-label="Next slide" id="keen-slider-next" class="text-gray-600 transition-colors hover:text-gray-900">
+            <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
             </svg>
           </button>
         </div>
-
+      
         <br>
         <br>
         <br>
         <br>
-
-        <div data-aos="zoom-out-left" class="mx-auto   flex flex-col justify-center items-center content-center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <div data-aos="zoom-out-left" class="mx-auto flex flex-col justify-center items-center content-center">
           <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
             Recevez nos dernières nouvelles et suivez notre impact !
           </h2>
-
+      
           <p class="mt-2 text-center text-gray-600">
             Inscrivez-vous pour rester informé des projets et initiatives de Lien de Vie.
           </p>
-
+      
           <form class="mt-6">
             <div class="relative max-w-lg">
               <label class="sr-only" for="email">Email</label>
-
+      
               <input
                 class="w-full rounded-full border-gray-300 bg-gray-100 p-3 pe-32 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600"
                 id="email" type="email" placeholder="votre@email.com" />
-
+      
               <button type="submit"
                 class="absolute end-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
                 S'inscrire
@@ -523,14 +596,21 @@
             </div>
           </form>
         </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
 
     </div>
   </section>
 
-
-  <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+  <footer class="overflow-x-hidden lg:overflow-x-none  bg-gradient-to-r from-blue-500 to-blue-700 text-white">
     <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
       <div class="text-center">
         <h2 data-aos="zoom-in" data-aos-easing="ease-in-back" class="text-3xl font-extrabold sm:text-5xl">Un Impact
@@ -589,15 +669,10 @@
     </div>
   </footer>
 
-
-
-
-
-
-
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script type="module" src="navbar.js"></script>
-  <script type="module" src="slider.js"></script>
+  <script    src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script    type="module" src="navbar.js"></script>
+  <script    type="module" src="slider.js"></script>
+  <script   src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({
       duration: 1000, // Durée de l'animation (en ms)

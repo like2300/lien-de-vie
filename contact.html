@@ -37,7 +37,9 @@
 <body class="relative h-full " style="overflow-x: hidden;">
   
 
-  <nav class="fixed backdrop-blur-2xl bg-white bg-opacity-50 z-10 w-full border-b border-blue-400 dark:border-gray-800"  data-aos="fade-down">
+
+  <!-- Navigation -->
+  <nav class="fixed  z-10 w-full  shadow-white shadow-lg text-wrap bg-white">  
     <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
       <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
         <!-- Section Logo -->
@@ -49,31 +51,21 @@
             </div>
             <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
           </a>
-  
+
           <!-- Bouton Menu Mobile -->
           <div class="relative flex max-h-10 items-center lg:hidden">
-            <button
-              aria-label="hamburger"
-              id="hamburger"
-              class="relative z-30 -mr-6 p-6 focus:outline-none"
-            >
+            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
               <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
             </button>
           </div>
         </div>
-  
+
         <!-- Fond Mobile -->
-        <div
-          id="navLayer"
-          aria-hidden="true"
-          class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden"
-        ></div>
-  
+        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        </div>
+
         <!-- Liens de Navigation -->
-        <div
-          id="navlinks"
-          class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
-        >
+        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
           <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
             <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
               <li>
@@ -92,7 +84,7 @@
                 </a>
               </li>
               <li>
-                <a href="/#classement" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
                   Classement
                 </a>
               </li>
@@ -112,86 +104,196 @@
       </div>
     </div>
   </nav>
+
    
 
+   
 
-<header style="background-image: url(https://img.freepik.com/free-vector/flat-geometric-background_23-2149343174.jpg?t=st=1735313834~exp=1735317434~hmac=f90e4435255040b70bcaac9d672695ca361a4f57d6b0221522f12b3f249df305&amp;w=826);background-position: center; background-size: cover;" class="bg-no-repeat bg-fixed">
-  
+  <header>
 
-<div class="  w-full h-screen ">
-    <div class="relative flex items-top justify-center min-h-screen   dark:bg-gray-900 sm:items-center sm:pt-0">
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-            <div class="mt-8 overflow-hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <!-- Section d'information -->
-                    <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
-                        <h1 class="text-4xl sm:text-5xl text-blue-600 font-extrabold tracking-tight">
-                            Contactez-nous
-                        </h1>
-                        <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
-                            Remplissez le formulaire pour nous poser vos questions ou en savoir plus sur nos causes 
-                        </p>
+    <br class=" ">
+    <br >
+    <br  >
+    <br  >
+    <br >
+    <br  >
+    <br  >
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
     
-                        <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                            <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                                +242 06 123 4567
-                            </div>
-                        </div>
-    
-                        <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                                contact@liendevie.org
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Formulaire -->
-                    <form action="https://fabform.io/f/xxxxx" method="post" class="p-6 flex flex-col justify-center">
-                        <div class="flex flex-col">
-                            <label for="name" class="hidden">Nom complet</label>
-                            <input type="text" name="name" id="name" placeholder="Nom complet" required class="w-full mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-blue-600 focus:outline-none">
-                        </div>
-    
-                        <div class="flex flex-col mt-2">
-                            <label for="email" class="hidden">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Adresse email" required class="w-full mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-blue-600 focus:outline-none">
-                        </div>
-    
-                        <div class="flex flex-col mt-2">
-                            <label for="message" class="hidden">Message</label>
-                            <textarea name="message" id="message" placeholder="Votre message" required class="w-full mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-blue-600 focus:outline-none"></textarea>
-                        </div>
-    
-                        <button type="submit" class="md:w-32 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-blue-700 transition ease-in-out duration-300">
-                            Envoyer
-                        </button>
-                    </form>
-                </div>
-            </div>
+
+    <div class="flex justify-center items-center w-screen h-screen bg-white">
+
+   
+      <!-- COMPONENT CODE -->
+      <div class="container mx-auto my-4 px-4 lg:px-20">
+        <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+          <div class="flex">
+            <h1 class="font-bold uppercase text-2xl">Contactez-nous</h1>
+          </div>
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Prénom*"
+            />
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Nom*"
+            />
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="email"
+              placeholder="Email*"
+            />
+            <input
+              class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="number"
+              placeholder="Téléphone*"
+            />
+          </div>
+          <div class="my-4">
+            <textarea
+              placeholder="Votre message*"
+              class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            ></textarea>
+          </div>
+          <div class="my-2 w-1/2 lg:w-1/4">
+            <button
+              class="uppercase text-sm font-bold tracking-wide bg-blue-600 text-white p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-blue-700"
+            >
+              Envoyer
+            </button>
+          </div>
         </div>
+    
+        <!-- Section Informations de contact -->
+        <div class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-600 rounded-2xl">
+          <div class="flex flex-col text-white">
+            <h1 class="font-bold uppercase text-4xl my-4">Notre bureau</h1>
+            <p class="text-gray-200">
+              Nous sommes à votre écoute pour toute question ou demande de renseignements. N'hésitez pas à nous contacter !
+            </p>
+    
+            <!-- Adresse -->
+            <div class="flex my-4 w-2/3 lg:w-1/2">
+              <div class="flex flex-col">
+                <i class="fas fa-map-marker-alt pt-2 pr-2"></i>
+              </div>
+              <div class="flex flex-col">
+                <h2 class="text-2xl">Adresse</h2>
+                <p class="text-gray-200">123 Rue de la Solidarité, 75001 Paris, France</p>
+              </div>
+            </div>
+    
+            <!-- Téléphone -->
+            <div class="flex my-4 w-2/3 lg:w-1/2">
+              <div class="flex flex-col">
+                <i class="fas fa-phone-alt pt-2 pr-2"></i>
+              </div>
+              <div class="flex flex-col">
+                <h2 class="text-2xl">Téléphone</h2>
+                <p class="text-gray-200">Tel: +33 1 23 45 67 89</p>
+                <p class="text-gray-200">Fax: +33 1 23 45 67 90</p>
+              </div>
+            </div>
+    
+            <!-- Réseaux sociaux -->
+            <div class="flex my-4 w-2/3 lg:w-1/2">
+              <a
+                href="https://www.facebook.com/liensdevie"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1"
+              >
+                <i class="fab fa-facebook-f text-blue-600"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/liensdevie"
+                target="_blank"
+                rel="noreferrer"
+                class="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1"
+              >
+                <i class="fab fa-linkedin-in text-blue-600"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COMPONENT CODE -->
+
+
+
+      
     </div>
     
-</div>
+
+ 
+     
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+    <br class="lg:hidden">
+  
+    <div data-aos="zoom-out-left" class="mx-auto flex flex-col justify-center items-center content-center">
+      <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
+        Recevez nos dernières nouvelles et suivez notre impact !
+      </h2>
+  
+      <p class="mt-2 text-center text-gray-600">
+        Inscrivez-vous pour rester informé des projets et initiatives de Lien de Vie.
+      </p>
+  
+      <form class="mt-6">
+        <div class="relative max-w-lg">
+          <label class="sr-only" for="email">Email</label>
+  
+          <input
+            class="w-full rounded-full border-gray-300 bg-gray-100 p-3 pe-32 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600"
+            id="email" type="email" placeholder="votre@email.com" />
+  
+          <button type="submit"
+            class="absolute end-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            S'inscrire
+          </button>
+        </div>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </header>
 

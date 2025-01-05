@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Liens de Vie est une plateforme solidaire qui facilite les dons pour soutenir des structures vulnérables et organiser des événements caritatifs.">
@@ -16,9 +16,7 @@
     <meta name="twitter:title" content="Liens de Vie">
     <meta name="twitter:description" content="Liens de Vie est une plateforme solidaire qui facilite les dons pour soutenir des structures vulnérables et organiser des événements caritatifs.">
     <meta name="twitter:image" content="https://example.com/image.jpg">
-  
     <title>Liens de vie</title>
-  
     <link rel="stylesheet" href="principal.css">
     <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
     <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf">
@@ -32,12 +30,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  </head>
-  
-<body class="relative h-full " style="overflow-x: hidden;">
-  
+</head>
+<body class="relative h-full" style="overflow-x: hidden;">
 
-  <nav class="fixed backdrop-blur-2xl bg-white bg-opacity-50 z-10 w-full border-b border-blue-400 dark:border-gray-800"  data-aos="fade-down">
+  <!-- Navigation -->
+  <nav class="fixed  z-10 w-full  shadow-white shadow-lg text-wrap bg-white">  
     <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
       <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
         <!-- Section Logo -->
@@ -49,31 +46,21 @@
             </div>
             <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
           </a>
-  
+
           <!-- Bouton Menu Mobile -->
           <div class="relative flex max-h-10 items-center lg:hidden">
-            <button
-              aria-label="hamburger"
-              id="hamburger"
-              class="relative z-30 -mr-6 p-6 focus:outline-none"
-            >
+            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
               <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
             </button>
           </div>
         </div>
-  
+
         <!-- Fond Mobile -->
-        <div
-          id="navLayer"
-          aria-hidden="true"
-          class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden"
-        ></div>
-  
+        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        </div>
+
         <!-- Liens de Navigation -->
-        <div
-          id="navlinks"
-          class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
-        >
+        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
           <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
             <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
               <li>
@@ -92,7 +79,7 @@
                 </a>
               </li>
               <li>
-                <a href="/#classement" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
                   Classement
                 </a>
               </li>
@@ -112,395 +99,130 @@
       </div>
     </div>
   </nav>
-   
 
 
-
-  <header style="background-image: url(https://img.freepik.com/free-vector/flat-geometric-background_23-2149343174.jpg?t=st=1735313834~exp=1735317434~hmac=f90e4435255040b70bcaac9d672695ca361a4f57d6b0221522f12b3f249df305&amp;w=826);background-position: center; background-size: cover;" class="bg-no-repeat bg-fixed">
- 
-      <section>
-          <br>
-          <br>
-          <br>
-          <br>
-           
-          <section>
-            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-              <div class="space-y-4 md:space-y-8">
-                <!-- Titre et introduction -->
-                <div class="max-w-xl">
-                    <h2 class="text-2xl xl:text-6xl font-bold text-blue-600 md:text-3xl w-full  md:mb-4 ">
-                    Explorez nos causes et faites la différence
-                  </h2>
-          
-                  <p class="mt-4 text-gray-700 w-">
-                    Découvrez des initiatives qui changent des vies : aide alimentaire, accès à l’éducation, 
-                    soutien médical, et bien plus encore. Chaque contribution, grande ou petite, contribue à construire 
-                    un avenir meilleur pour ceux qui en ont le plus besoin.
-                  </p>
-                </div>
-          
-                <!-- Image illustrant une cause -->
-               
- <div data-aos="zoom-in-up" class="bg-blue-400 md:h-[500px] h-[400px] shadow-2xl shadow rounded-[30px] lg:rounded-[60px] w-full p-12" style="background-image: url('https://i.pinimg.com/736x/15/e8/7a/15e87a466f6ee48e1995fff2d416cd3e.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
-   
-              </div>
-            </div>
-          </section>
-          
-      </section>
-  </header>
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-   <article>
-      <section class="p-5 md:p-12 lg:px-16 lg:py-24" data-aos="fade-down">
-          <div class="mx-auto px-4 grid justify-items-center">
-              <!-- Titre et Paragraphe d'Introduction -->
-              <h2 class="text-3xl text-center  md:text-5xl font-bold text-blue-600 mb-4">Découvrez Nos Causes en Cours</h2><br>
-              <p class="text-gray-600 mb-8 text-center md:w-1/2 ">
-                  Nous vous invitons à explorer les initiatives solidaires qui ont besoin de votre soutien. 
-                  Chaque don compte et contribue à transformer des vies.  Ensemble, faisons une différence !
-              </p>
-              
-              <br>
-              <br>
-              <br>
-              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  <!-- Cartes de causes -->
-                  <!-- Carte 1 -->
-                  <article  data-aos="zoom-in" data-aos-easing="ease-in-back"
-     data-aos-delay="100" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                      <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
-                      <div class="p-4 sm:p-6">
-                          <a href="#">
-                              <h3 class="text-lg font-medium text-gray-900">
-                                  Orphelinat Saint-Joseph
-                              </h3>
-                          </a>
-                          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                              Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-                          </p>
-                          <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                              Découvrir
-                              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                  →
-                              </span>
-                          </a>
-                      </div>
-                  </article>
-                  <!-- Carte 1 -->
-                  <article data-aos="zoom-in" data-aos-easing="ease-in-back"
-     data-aos-delay="200"  class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                      <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
-                      <div class="p-4 sm:p-6">
-                          <a href="#">
-                              <h3 class="text-lg font-medium text-gray-900">
-                                  Orphelinat Saint-Joseph
-                              </h3>
-                          </a>
-                          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                              Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-                          </p>
-                          <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                              Découvrir
-                              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                  →
-                              </span>
-                          </a>
-                      </div>
-                  </article>
-                  <!-- Carte 1 -->
-                  <article  data-aos="zoom-in" data-aos-easing="ease-in-back"
-     data-aos-delay="300" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                      <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
-                      <div class="p-4 sm:p-6">
-                          <a href="#">
-                              <h3 class="text-lg font-medium text-gray-900">
-                                  Orphelinat Saint-Joseph
-                              </h3>
-                          </a>
-                          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                              Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-                          </p>
-                          <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                              Découvrir
-                              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                  →
-                              </span>
-                          </a>
-                      </div>
-                  </article>
-                  <!-- Carte 1 -->
-                  <article  data-aos="zoom-in" data-aos-easing="ease-in-back"
-     data-aos-delay="400" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                      <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
-                      <div class="p-4 sm:p-6">
-                          <a href="#">
-                              <h3 class="text-lg font-medium text-gray-900">
-                                  Orphelinat Saint-Joseph
-                              </h3>
-                          </a>
-                          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                              Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-                          </p>
-                          <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                              Découvrir
-                              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                  →
-                              </span>
-                          </a>
-                      </div>
-                  </article>
-                  <!-- Carte 1 -->
-                  <article  data-aos="zoom-in" data-aos-easing="ease-in-back"
-     data-aos-delay="500" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                      <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
-                      <div class="p-4 sm:p-6">
-                          <a href="#">
-                              <h3 class="text-lg font-medium text-gray-900">
-                                  Orphelinat Saint-Joseph
-                              </h3>
-                          </a>
-                          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                              Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-                          </p>
-                          <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                              Découvrir
-                              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                  →
-                              </span>
-                          </a>
-                      </div>
-                  </article>
-                  <!-- Carte 1 -->
-                  <article data-aos="zoom-in" data-aos-easing="ease-in-back"
-     data-aos-delay="600"  class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                      <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
-                      <div class="p-4 sm:p-6">
-                          <a href="#">
-                              <h3 class="text-lg font-medium text-gray-900">
-                                  Orphelinat Saint-Joseph
-                              </h3>
-                          </a>
-                          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                              Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.
-                          </p>
-                          <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
-                              Découvrir
-                              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                                  →
-                              </span>
-                          </a>
-                      </div>
-                  </article>
-                  
-                  <!-- (Ajoutez d'autres cartes ici) -->
-              </div>
-          </div>
-
-  <br>
-  <br>
-  <br>
-  <br>                 
-            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-    <!-- Titre et description -->
-    <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
-        <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
-            L'Impact de Votre Générosité
-        </h2>
-        <br>
-        <p class="mt-4 text-gray-600 sm:text-xl">
-            Grâce à votre soutien, nous avons accompli de grandes choses ensemble. Voici quelques chiffres qui 
-            témoignent de l'impact réel de vos contributions.
-        </p>
-    </div>
-
-    <!-- Statistiques -->
-    <dl class="mt-6 grid grid-cols-1 gap-4 divide-y divide-gray-100 sm:mt-8 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
-        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="100">
-            <dt class="order-last text-lg font-medium text-gray-500">Vies Transformées</dt>
-            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">500+</dd>
-        </div>
-
-        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="200">
-            <dt class="order-last text-lg font-medium text-gray-500">Fonds Collectés</dt>
-            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">100K CFA</dd>
-        </div>
-
-        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="300">
-            <dt class="order-last text-lg font-medium text-gray-500">Projets Soutenus</dt>
-            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">50+</dd>
-        </div>
-
-        <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="400">
-            <dt class="order-last text-lg font-medium text-gray-500">Dons Effectués</dt>
-            <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">86k</dd>
-        </div>
-    </dl>
-</div>
-
-            
-
-
-
-
- <div data-aos="zoom-in-up" class="bg-blue-400 md:h-[500px] h-[400px] shadow-2xl shadow rounded-[30px] lg:rounded-[60px] w-full p-12" style="background-image: url('https://img.freepik.com/free-photo/person-giving-friend-cash-gift-envelope_181624-33074.jpg?t=st=1734950276~exp=1734953876~hmac=3c9fb7d7160ace0ef0a861552fd01236fa9139acd7364fad2b39e40cb3370d8f&w=740');background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
-        
-
-
- <br>
- <br>
- <br>
- <br><br>
- <br>
- <br>
-
-        <div data-aos="zoom-out-left" class="mx-auto   flex flex-col justify-center items-center content-center">
-            <h2  class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">
-              Recevez nos dernières nouvelles et suivez notre impact !
+    <section class="overflow-hidden bg-[url(https://scontent.fbzv4-1.fna.fbcdn.net/v/t39.30808-6/472162985_482448564870159_3735679965382177579_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=cmN4LZQDDeQQ7kNvgG-6q5N&_nc_zt=23&_nc_ht=scontent.fbzv4-1.fna&_nc_gid=A9DrtnAygpUcGJ3k9uA3yFJ&oh=00_AYCHbH6uOYa0ZhDkfyJqDfvdrZAYMxYxA2bga9IEEc3frA&oe=677E264E)] bg-cover bg-top bg-no-repeat h-screen bg-fixed  ">
+       <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24 w-screen flex h-full justify-center content-center items-center">
+          <div class="text-center ltr:sm:text-left rtl:sm:text-right"><br>
+            <h2 class="text-4xl font-bold text-white sm:text-3xl md:text-5xl">
+              Soutenez des causes <br> qui changent des vies
             </h2>
-          
-            <p class="mt-2 text-center text-gray-600">
-              Inscrivez-vous pour rester informé des projets et initiatives de Lien de Vie.
-            </p>
-          
-            <form class="mt-6">
-              <div class="relative max-w-lg">
-                <label class="sr-only" for="email">Email</label>
-          
-                <input
-                  class="w-full rounded-full border-gray-300 bg-gray-100 p-3 pe-32 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600"
-                  id="email"
-                  type="email"
-                  placeholder="votre@email.com"
-                />
-          
-                <button
-                  type="submit"
-                  class="absolute end-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            <p class="text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
+                Découvrez des initiatives solidaires qui ont besoin de votre soutien.<br> Que ce soit pour l'éducation, la santé, ou
+                l'aide alimentaire,  chaque don compte et <br> contribue à construire un avenir meilleur.
+              </p><br>
+              <div class="mt-4 sm:mt-8">
+                <a
+                  href="#causes"
+                  class="inline-block rounded-full bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400"
                 >
-                  S'inscrire
-                </button>
+                  Découvrir les causes
+                </a>
               </div>
-            </form>
           </div>
-          
-              
-      </section>
-
-  </article>
-
-<br>
-<br>
-<br>
-  
-
-
-
-
-
-
-
-  <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-    <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
-      <div class="text-center">
-        <h2 data-aos="zoom-in" data-aos-easing="ease-in-back" class="text-3xl font-extrabold sm:text-5xl">Un Impact Durable</h2>
-  
-        <p data-aos="zoom-in" data-aos-easing="ease-in-back" class="mx-auto mt-4 max-w-md text-blue-100">
-          Ensemble, nous construisons un avenir meilleur. Découvrez comment votre soutien change des vies.
-        </p>
-  
-        <a data-aos="zoom-in" data-aos-easing="ease-in-back"
-          href="#"
-          class="mt-8 inline-block rounded-full border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
-        >
-          Participez Maintenant
-        </a>
       </div>
-  
-      <div class="mt-16 border-t border-blue-300 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
-        <ul class="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
-          <li>
-            <a href="#" class="transition hover:underline">Mentions Légales</a>
-          </li>
-          <li>
-            <a href="#" class="transition hover:underline">Politique de Confidentialité</a>
-          </li>
-          <li>
-            <a href="#" class="transition hover:underline">Conditions Générales</a>
-          </li>
-        </ul>
-  
-        <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">Facebook</span>
-              <i class="bx bxl-facebook-circle text-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">Instagram</span>
-              <i class="bx bxl-instagram text-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">Twitter</span>
-              <i class="bx bxl-twitter text-2xl"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="text-white transition hover:text-blue-300"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span class="sr-only">GitHub</span>
-              <i class="bx bxl-github text-2xl"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  
+  </section>
 
+    <article>
+        <section class="p-5 md:p-12 lg:px-16 lg:py-24" data-aos="fade-down">
+            <div class="mx-auto px-4 grid justify-items-center">
+                <br><br>
+                <h2 class="text-3xl text-center md:text-5xl font-bold text-blue-600 mb-4">Découvrez Nos Causes en Cours</h2>
+                <p class="text-gray-600 mb-8 text-center md:w-1/2">
+                    Nous vous invitons à explorer les initiatives solidaires qui ont besoin de votre soutien. Chaque don compte et contribue à transformer des vies. Ensemble, faisons une différence !
+                </p>  <br><br>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Cartes de causes -->
+                    <!-- Carte 1 -->
 
+                    <article data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+                        <img alt="Exemple de cause" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="h-56 w-full object-cover">
+                        <div class="p-4 sm:p-6">
+                            <a href="#"><h3 class="text-lg font-medium text-gray-900">Orphelinat Saint-Joseph</h3></a>
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">Collecte de fonds pour offrir des fournitures scolaires aux enfants en difficulté.</p>
+                            <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">Découvrir <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">→</span></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Répétez les autres cartes de la même manière -->
+                </div>
+                <br><br><br><br><br>    <br><br><br><br><br>  
+            </div>
 
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+                    <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">L'Impact de Votre Générosité</h2>
+                    <p class="mt-4 text-gray-600 sm:text-xl">Grâce à votre soutien, nous avons accompli de grandes choses ensemble. Voici quelques chiffres qui témoignent de l'impact réel de vos contributions.</p>
+                </div>
+                <dl class="mt-6 grid grid-cols-1 gap-4 divide-y divide-gray-100 sm:mt-8 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
+                    <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <dt class="order-last text-lg font-medium text-gray-500">Vies Transformées</dt>
+                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">500+</dd>
+                    </div>
+                    <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <dt class="order-last text-lg font-medium text-gray-500">Fonds Collectés</dt>
+                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">100K CFA</dd>
+                    </div>
+                    <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="300">
+                        <dt class="order-last text-lg font-medium text-gray-500">Projets Soutenus</dt>
+                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">50+</dd>
+                    </div>
+                    <div class="flex flex-col px-4 py-8 text-center" data-aos="zoom-in" data-aos-delay="400">
+                        <dt class="order-last text-lg font-medium text-gray-500">Dons Effectués</dt>
+                        <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">86k</dd>
+                    </div>
+                </dl>
+            </div>
+            <br><br><br> 
+            <div data-aos="zoom-in-up" class="bg-blue-400 md:h-[500px] h-[400px] shadow-2xl shadow rounded-[30px] lg:rounded-[60px] w-full p-12" style="background-image: url('https://img.freepik.com/free-photo/person-giving-friend-cash-gift-envelope_181624-33074.jpg?t=st=1734950276~exp=1734953876~hmac=3c9fb7d7160ace0ef0a861552fd01236fa9139acd7364fad2b39e40cb3370d8f&w=740');background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+            <br><br><br><br><br> <br><br><br><br><br>
+            <div data-aos="zoom-out-left" class="mx-auto flex flex-col justify-center items-center content-center">
 
-  
-  
-  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script type="module" src="navbar.js"></script>
-  <script type="module" src="slider.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // Durée de l'animation (en ms)
-      once: true, // Animation uniquement au premier scroll
-    });
-  </script>
+                <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl">Recevez nos dernières nouvelles et suivez notre impact !</h2>
+                <p class="mt-2 text-center text-gray-600">Inscrivez-vous pour rester informé des projets et initiatives de Lien de Vie.</p>
+                <form class="mt-6">
+                    <div class="relative max-w-lg">
+                        <label class="sr-only" for="email">Email</label>
+                        <input class="w-full rounded-full border-gray-300 bg-gray-100 p-3 pe-32 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-600" id="email" type="email" placeholder="votre@email.com" />
+                        <button type="submit" class="absolute end-0 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+            <br><br><br><br><br>  
+        </section>
+    </article>
+
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
+            <div class="text-center">
+                <h2 data-aos="zoom-in" data-aos-easing="ease-in-back" class="text-3xl font-extrabold sm:text-5xl">Un Impact Durable</h2>
+                <p data-aos="zoom-in" data-aos-easing="ease-in-back" class="mx-auto mt-4 max-w-md text-blue-100">Ensemble, nous construisons un avenir meilleur. Découvrez comment votre soutien change des vies.</p>
+                <a data-aos="zoom-in" data-aos-easing="ease-in-back" href="#" class="mt-8 inline-block rounded-full border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Participez Maintenant</a>
+            </div>
+            <div class="mt-16 border-t border-blue-300 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
+                <ul class="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
+                    <li><a href="#" class="transition hover:underline">Mentions Légales</a></li>
+                    <li><a href="#" class="transition hover:underline">Politique de Confidentialité</a></li>
+                    <li><a href="#" class="transition hover:underline">Conditions Générales</a></li>
+                </ul>
+                <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+                    <li><a href="#" class="text-white transition hover:text-blue-300" rel="noreferrer" target="_blank"><span class="sr-only">Facebook</span><i class="bx bxl-facebook-circle text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300" rel="noreferrer" target="_blank"><span class="sr-only">Instagram</span><i class="bx bxl-instagram text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300" rel="noreferrer" target="_blank"><span class="sr-only">Twitter</span><i class="bx bxl-twitter text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300" rel="noreferrer" target="_blank"><span class="sr-only">GitHub</span><i class="bx bxl-github text-2xl"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script type="module" src="navbar.js"></script>
+    <script type="module" src="slider.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durée de l'animation (en ms)
+            once: true, // Animation uniquement au premier scroll
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les détails d'une cause soutenue par Liens de Vie.">
+    <meta name="keywords" content="cause, solidarité, humanitaire, Liens de Vie, dons">
+    <meta name="author" content="Liens de Vie Team">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5C6CF2">
+    <meta property="og:title" content="Découvrir une Cause - Liens de Vie">
+    <meta property="og:description" content="Découvrez les détails d'une cause soutenue par Liens de Vie.">
+    <meta property="og:image" content="https://example.com/decouvrir.jpg">
+    <meta property="og:url" content="https://example.com/decouvrir.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Découvrir une Cause - Liens de Vie">
+    <meta name="twitter:description" content="Découvrez les détails d'une cause soutenue par Liens de Vie.">
+    <meta name="twitter:image" content="https://example.com/decouvrir.jpg">
+
+    <title>Découvrir une Cause - Liens de Vie</title>
+
+    <link rel="stylesheet" href="principal.css">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDyx4fFg.ttf" type="font/ttf">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqD-R4fFg.ttf" type="font/ttf">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf" type="font/ttf">
+    <link as="font" crossorigin rel="preload" href="https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDLBkfFg.ttf" type="font/ttf">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body class="relative h-full" style="overflow-x: hidden;">
+
+  <!-- Navigation -->
+  <nav class="fixed  z-10 w-full  shadow-white shadow-lg text-wrap bg-white">  
+    <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+      <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
+        <!-- Section Logo -->
+        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+          <a href="./index.html" aria-label="logo" class="flex items-center space-x-2">
+            <div aria-hidden="true" class="flex space-x-1">
+              <div class="h-4 w-4 rounded-full bg-blue-600"></div>
+              <div class="h-6 w-2 bg-blue-400"></div>
+            </div>
+            <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
+          </a>
+
+          <!-- Bouton Menu Mobile -->
+          <div class="relative flex max-h-10 items-center lg:hidden">
+            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
+              <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Fond Mobile -->
+        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        </div>
+
+        <!-- Liens de Navigation -->
+        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
+          <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
+            <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
+              <li>
+                <a href="./index.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="./cause.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Causes
+                </a>
+              </li>
+              <li>
+                <a href="./don.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Soutenir
+                </a>
+              </li>
+              <li>
+                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Classement
+                </a>
+              </li>
+              <li>
+                <a href="/#evenements" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Événements
+                </a>
+              </li>
+              <li>
+                <a href="./contact.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Section Principale -->
+    <header class="bg-no-repeat bg-fixed brightness-125" style="background-image: url('https://img.freepik.com/free-vector/flat-geometric-background_23-2149343174.jpg?t=st=1735313834~exp=1735317434~hmac=f90e4435255040b70bcaac9d672695ca361a4f57d6b0221522f12b3f249df305&amp;w=826'); background-size: cover;">
+        <section class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+            <div class="space-y-4 md:space-y-8">
+                <!-- Titre et Introduction -->
+                <div class="max-w-xl">
+                    <h2 class="text-2xl xl:text-6xl font-bold text-blue-600 md:text-3xl w-full md:mb-4">Orphelinat Saint-Joseph</h2>
+                    <p class="mt-4 text-gray-700">Soutenez les enfants de l'orphelinat Saint-Joseph en faisant un don aujourd'hui.</p>
+                </div>
+
+                <!-- Image Illustrative -->
+                <div data-aos="zoom-in-up" class="bg-blue-400 md:h-[500px] h-[400px] shadow-2xl shadow rounded-[30px] lg:rounded-[60px] w-full p-12" style="background-image: url('https://i.pinimg.com/736x/15/e8/7a/15e87a466f6ee48e1995fff2d416cd3e.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Section des Détails de la Cause -->
+    <section class="p-5 md:p-12 lg:px-16 lg:py-24" data-aos="fade-down">
+        <div class="mx-auto px-4">
+            <h2 class="text-3xl text-center md:text-5xl font-bold text-blue-600 mb-4">À Propos de la Cause</h2>
+            <p class="text-gray-600 mb-8 text-center md:w-1/2">Découvrez comment votre soutien peut faire la différence.</p>
+
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Description de la Cause -->
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Description</h3>
+                    <p class="text-gray-700 mb-4">
+                        L'orphelinat Saint-Joseph accueille plus de 50 enfants en situation de vulnérabilité. Ces enfants ont besoin de soutien pour leur éducation, leur santé et leur bien-être quotidien. Votre don peut leur offrir une meilleure qualité de vie et un avenir plus prometteur.
+                    </p>
+                    <p class="text-gray-700">
+                        Nous avons besoin de fonds pour acheter des fournitures scolaires, des médicaments et améliorer les infrastructures de l'orphelinat.
+                    </p>
+                </div>
+
+                <!-- Besoins de la Cause -->
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Besoins</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Fournitures scolaires (cahiers, stylos, livres)</li>
+                        <li>Médicaments et soins de santé</li>
+                        <li>Nourriture et vêtements</li>
+                        <li>Rénovation des infrastructures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des Images -->
+    <section class="p-5 md:p-12 lg:px-16 lg:py-24" data-aos="fade-up">
+        <div class="mx-auto px-4">
+            <h2 class="text-3xl text-center md:text-5xl font-bold text-blue-600 mb-4">Galerie</h2>
+            <p class="text-gray-600 mb-8 text-center md:w-1/2">Découvrez en images les actions menées grâce à votre soutien.</p>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Image 1 -->
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" alt="Enfants de l'orphelinat" class="w-full h-64 object-cover">
+                </div>
+                <!-- Image 2 -->
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" alt="Éducation pour tous" class="w-full h-64 object-cover">
+                </div>
+                <!-- Image 3 -->
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" alt="Soutien médical" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section d'Appel à l'Action -->
+    <section class="p-5 md:p-12 lg:px-16 lg:py-24 bg-blue-50" data-aos="fade-up">
+        <div class="mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-blue-600 mb-4">Faites la Différence</h2>
+            <p class="text-gray-700 mb-8">Votre don peut changer des vies. Soutenez l'orphelinat Saint-Joseph dès aujourd'hui.</p>
+            <a href="./don.html" class="inline-block bg-blue-600 text-white py-3 px-8 rounded-full hover:bg-blue-700">Faire un Don</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="mx-auto max-w-screen-xl px-6 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-24">
+            <div class="text-center">
+                <h2 data-aos="zoom-in" class="text-3xl font-extrabold sm:text-5xl">Un Impact Durable</h2>
+                <p data-aos="zoom-in" class="mx-auto mt-4 max-w-md text-blue-100">Ensemble, nous construisons un avenir meilleur.</p>
+                <a data-aos="zoom-in" href="#" class="mt-8 inline-block rounded-full border border-white px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Participez Maintenant</a>
+            </div>
+            <div class="mt-16 border-t border-blue-300 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
+                <ul class="flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
+                    <li><a href="#" class="transition hover:underline">Mentions Légales</a></li>
+                    <li><a href="#" class="transition hover:underline">Politique de Confidentialité</a></li>
+                    <li><a href="#" class="transition hover:underline">Conditions Générales</a></li>
+                </ul>
+                <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-facebook-circle text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-instagram text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-twitter text-2xl"></i></a></li>
+                    <li><a href="#" class="text-white transition hover:text-blue-300"><i class="bx bxl-github text-2xl"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script type="module" src="navbar.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
