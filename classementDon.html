@@ -30,77 +30,133 @@
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+      /* CSS Code */
+      .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+      }
+      .swiper-pagination-bullet {
+      background: #4582f5;
+      }
+      .swiper-pagination-bullet-active {
+      background:#4582f5 !important;
+      }
+  </style>
+
 </head>
 <body class="relative h-full" style="overflow-x: hidden;">
 
   <!-- Navigation -->
-  <nav class="fixed  z-10 w-full  shadow-white shadow-lg text-wrap bg-white">  
-    <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-      <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
-        <!-- Section Logo -->
-        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-          <a href="./index.html" aria-label="logo" class="flex items-center space-x-2">
-            <div aria-hidden="true" class="flex space-x-1">
-              <div class="h-4 w-4 rounded-full bg-blue-600"></div>
-              <div class="h-6 w-2 bg-blue-400"></div>
-            </div>
-            <span class="text-2xl font-bold text-blue-600">Liens de Vie</span>
-          </a>
 
-          <!-- Bouton Menu Mobile -->
-          <div class="relative flex max-h-10 items-center lg:hidden">
-            <button aria-label="hamburger" id="hamburger" class="relative z-30 -mr-6 p-6 focus:outline-none">
-              <i class="bx bx-menu-alt-right text-blue-600 text-3xl"></i>
-            </button>
-          </div>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-screen z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo et titre -->
+      <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse" aria-label="logo">
+        <div aria-hidden="true" class="flex space-x-1">
+           <img src="./img/pixelcut-export.png" class="h-14" alt="Liens de Vie logo">
         </div>
-
-        <!-- Fond Mobile -->
-        <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition-transform duration-500 ease-in-out dark:bg-gray-900/70 lg:hidden">
+        <span class="text-2xl font-bold text-[#5bccf2] hidden lg:block">Liens de Vie</span>
+      </a>
+  
+      <!-- Bouton de langue et menu mobile -->
+      <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+          <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+          English (US)
+        </button>
+        <!-- Dropdown de langue -->
+        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+          <ul class="py-2 font-medium" role="none">
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                  English (US)
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                  Deutsch
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                  Italiano
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                  中文 (繁體)
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <!-- Liens de Navigation -->
-        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-200 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
-          <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
-            <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-4 lg:text-sm">
-              <li>
-                <a href="./index.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a href="./cause.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
-                  Causes
-                </a>
-              </li>
-              <li>
-                <a href="./don.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
-                  Soutenir
-                </a>
-              </li>
-              <li>
-                <a href="./classementDon.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
-                  Classement
-                </a>
-              </li>
-              <li>
-                <a href="/#evenements" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
-                  Événements
-                </a>
-              </li>
-              <li>
-                <a href="./contact.html" class="hover:text-blue-600 block transition dark:hover:text-blue-400 md:px-4">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Liens de navigation -->
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="./index.html" class="block py-2 px-3 text-[#200C38] rounded hover:bg-[#F2F2F2] md:hover:bg-transparent md:hover:text-[#5BCCF2]">Accueil</a>
+          </li>
+          <li>
+            <a href="./cause.html" class="block py-2 px-3 text-[#200C38] rounded hover:bg-[#F2F2F2] md:hover:bg-transparent md:hover:text-[#5BCCF2]">Causes</a>
+          </li>
+          <li>
+            <a href="./don.html" class="block py-2 px-3 text-[#200C38] rounded hover:bg-[#F2F2F2] md:hover:bg-transparent md:hover:text-[#5BCCF2]">Soutenir</a>
+          </li>
+          <li>
+            <a href="./classementDon.html" class="block py-2 px-3 text-[#200C38] rounded hover:bg-[#F2F2F2] md:hover:bg-transparent md:hover:text-[#5BCCF2]">Classement</a>
+          </li>
+          <li>
+            <a href="./evenemt.html" class="block py-2 px-3 text-[#200C38] rounded hover:bg-[#F2F2F2] md:hover:bg-transparent md:hover:text-[#5BCCF2]">Événements</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="block py-2 px-3 text-[#200C38] rounded hover:bg-[#F2F2F2] md:hover:bg-transparent md:hover:text-[#5BCCF2]">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     <!-- Section Principale -->
@@ -406,7 +462,100 @@
       <br>
       <br>
       <br>
+
+
+      
     </div>
+
+
+<section class="p-5 md:p-12 lg:px-16 lg:py-24">
+
+
+
+  <div class="w-full relative">
+    <!-- Effet de brume floue à gauche
+    <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent   z-10"></div>
+
+     Effet de brume floue à droite  
+    <div class="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent   z-10"></div>
+ -->
+    <!-- Swiper Container -->
+    <div class="swiper centered-slide-carousel swiper-container relative">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+            <img
+              src="https://i.pinimg.com/236x/4d/b7/17/4db7174d1eb31c90e15ea34a9e32e7aa.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+            <img
+              src="https://i.pinimg.com/236x/27/c1/fd/27c1fd098a5893c6591ad9e202dfc4c7.jpg"
+              alt="Image 2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+            <img
+              src="https://i.pinimg.com/236x/97/db/63/97db63ab5abf2f60e78cb4824fee043d.jpg"
+              alt="Image 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+            <img
+              src="https://i.pinimg.com/236x/ac/eb/0d/aceb0d0eb3ddbc6cc522d2e4f7237189.jpg"
+              alt="Image 4"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+            <img
+              src="https://i.pinimg.com/236x/9d/ca/6c/9dca6c839cac6b1567b3a08c57a6d315.jpg"
+              alt="Image 5"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <div class="rounded-2xl h-96 flex justify-center items-center overflow-hidden">
+            <img
+              src="https://i.pinimg.com/236x/ab/62/de/ab62ded6fb63594397bf43cf4186795a.jpg"
+              alt="Image 6"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+ 
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
@@ -432,6 +581,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Scripts -->
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script type="module" src="navbar.js"></script>
@@ -476,6 +626,45 @@
                 }
             });
         });
+
+
     </script>
+
+
+<script>
+
+
+         // slider js
+         var swiper = new Swiper(".centered-slide-carousel", {
+        centeredSlides: true, // Centre le slide actif
+        paginationClickable: true, // Permet de cliquer sur la pagination
+        loop: true, // Active la boucle infinie
+        spaceBetween: 30, // Espace entre les slides
+        slideToClickedSlide: true, // Permet de cliquer sur un slide pour le sélectionner
+        autoplay: {
+            delay: 3000, // Délai entre les slides (3 secondes)
+            disableOnInteraction: false, // Continue le défilement même après interaction utilisateur
+        },
+        pagination: {
+            el: ".centered-slide-carousel .swiper-pagination", // Sélecteur de la pagination
+            clickable: true, // Permet de cliquer sur les points de pagination
+        },
+        breakpoints: {
+            1920: {
+            slidesPerView: 4, // Nombre de slides visibles pour les écrans larges
+            spaceBetween: 30, // Espace entre les slides
+            },
+            1028: {
+            slidesPerView: 2, // Nombre de slides visibles pour les écrans moyens
+            spaceBetween: 10, // Espace entre les slides
+            },
+            990: {
+            slidesPerView: 1, // Nombre de slides visibles pour les petits écrans
+            spaceBetween: 0, // Espace entre les slides
+            },
+        },
+    });
+    
+</script>
 </body>
 </html>
